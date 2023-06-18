@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Aprender Jugando</title>
+<link rel="shortcut icon" href="codigo.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/trontastic/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="estilos.css">
+<style> 
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  } 
+  header {
+    background-color: #9d71a8; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+  } 
+  nav { 
+    background-color: #d1b47fd0;
+    padding: 10px; 
+    text-align: center;
+  } 
+    nav a { 
+      color: #fff; 
+      text-decoration: none;
+      margin: 0 10px; 
+  } 
+    main { 
+      flex: 1; 
+      padding: 20px; 
+      text-align: center; 
+   } 
+    footer {
+      background-color: #9d71a8; 
+      color: #fff;
+      padding: 10px; 
+      text-align: center;
+   } 
+ 
+   #mensaje {
+  display: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  margin-top: 20px;
+}
+   </style> 
+   </head>
+   <body> 
+    <header>
+      <img src="MPCRA.png" width="200" alt="Mi logotipo">
+   <nav>
+     <ul> 
+     <li><a href="index.html">Inicio</a>
+     <a href="contenido.html">Contenido</a>
+     <a class="active" href="puzzle.html">Puzzle</a>
+     <a href="sobrenosotros.html">Sobre Nosotros</a></li>
+     </nav> 
+     </header> <center><h1>Arma correctamente la imagen :P </h1></center>
+
+     <div class="cover-screen">
+      <p id="result"></p>
+      <button id="start-button">QUIERES EMPEZAR?
+        NO ESPERES MUCHO ES MI PRIMERA VEZ XD <br>
+        (click)
+      </button>
+    </div>
+    <div id="moves"></div>
+    <div class="slider-game">
+      <div class="container"></div>
+      <div class="original-image">
+        <img src="original_image.png" alt="" />
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="app.js"></script>
+
+        <footer>
+           <p>E. Muñoz, K. Pizarro, J. Chuapanta, C. Ramos, R. Arias (MPCRA)</p> 
+           </footer>
+           </body> 
+           </html>
